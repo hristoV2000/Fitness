@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -177,7 +182,7 @@ header .ham-burger.active span:nth-child(2){
 }
 
 @keyframes goDown{
-    0%{transform: translateY(0);opacity: 0.5}
+    0%{transform: translateY(0);opacity: .5}
     100%{transform: translateY(10px);}
 }
 
@@ -198,4 +203,57 @@ header .ham-burger.active span:nth-child(2){
 
 .home h1 span{
     color: #c11325;
+}
+
+/* About section */
+
+.about{
+    padding: 80px 15px;
+    background-color: #ffffff;
+}
+
+.about .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.about .content .box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.about .content .box .inner{
+    background-color: #222222; 
+}
+
+.about .content .box:nth-child(2) .inner{
+    background-color: #c11325;
+}
+
+.about .content .box .inner .img img{
+    width: 100%;
+}
+
+.about .content .box .inner .text{
+    padding: 30px;
+}
+
+.about .content .box .inner .text h4{
+   font-size: 20px;
+   margin: 0;
+   padding: 0px 0px 15px;
+   font-weight: 500;
+   color: #ffffff;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.about .content .box .inner .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }

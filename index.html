@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Start Header-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Fitness <span>Club</span></a>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Classes</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Home-->
+    <section class="home">
+        <div class="container">
+            <h1>It's <span>gym</span> time. Let's go</h1>
+            <h1>We are ready to <span>fit you</span></h1>
+        </div>
+        <!-- go down -->
+            <a href="#about" class="go-down">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+        <!-- go down -->
+    </section>
+    <!-- End Home-->
+
+    <!-- jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".ham-burger").click(function(){
+
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active");
+            })
+        })
+    </script>
+
+</body>
+</html>

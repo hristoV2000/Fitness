@@ -107,7 +107,8 @@
                     <h2>Services</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat nihil perferendis
                         iusto veniam harum recusandae, obcaecati saepe eius, officiis aliquam quis iste neque
-                        consectetur architecto nulla reiciendis, ut laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat nihil perferendis
+                        consectetur architecto nulla reiciendis, ut laboriosam.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Exercitationem fugiat nihil perferendis
                         iusto veniam harum recusandae, obcaecati saepe eius, officiis aliquam quis iste neque
                         consectetur architecto nulla reiciendis, ut laboriosam.</p>
                     <a href="" class="btn">Start Now</a>
@@ -165,45 +166,94 @@
     <!-- End Service-->
 
     <!-- Start Classes-->
-        <section class="Classes">
-            <div class="container">
-                <div class="content">
-                    <div class="box img">
-                        <img src="images/gym.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>Classes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit optio ut error numquam quo, laborum quibusdam sit rem. Vero iure hic molestias totam! Illo eum officia ipsam at sit.</p>
-                        <div class="inner">
-
+    <section class="classes">
+        <div class="container">
+            <div class="content">
+                <div class="box img">
+                    <img src="images/gym.jpg" alt="">
+                </div>
+                <div class=" box text">
+                    <h2>Our Classes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit optio ut error numquam quo,
+                        laborum quibusdam sit rem. Vero iure hic molestias totam! Illo eum officia ipsam at sit.</p>
+                    <div class="class-items">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="images/about1.jpg" alt="">
+                                <div class="price">
+                                    $99
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h4>Stretching Training</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eius debitis illum
+                                    vero architecto natus ex aut modi sint commodi, provident ducimus qui excepturi
+                                    voluptatibus eum amet mollitia omnis! Fugiat.</p>
+                                <a href="">Get Details</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-text">
+                                <h4>Stretching Training</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eius debitis illum
+                                    vero architecto natus ex aut modi sint commodi, provident ducimus qui excepturi
+                                    voluptatibus eum amet mollitia omnis! Fugiat.</p>
+                                <a href="">Get Details</a>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/about1.jpg" alt="">
+                                <div class="price">
+                                    $99
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- End Classes-->
+
+    <!-- Start Today-->
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text">
+                    <h2>Start Your Training Today</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt enim, nemo culpa quidem, id
+                        laborum, mollitia recusandae dicta corporis modi labore obcaecati quae facilis voluptates
+                        assumenda eum unde? Inventore, unde.</p>
+                    <a href="" class="btn">Start Now</a>
+                </div>
+                <div class="box img">
+                    <img src="images/about1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Today-->
 
     <!-- jquery -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-</script>
-<script>
-    $(document).ready(function () {
-        $(".ham-burger").click(function () {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".ham-burger").click(function () {
 
-            $(".nav").toggleClass("open")
-            $(this).toggleClass("active");
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active");
+            })
+            $(".accordian-container").click(function () {
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
         })
-        $(".accordian-container").click(function(){
-          $(".accordian-container").children(".body").slideUp();
-          $(".accordian-container").removeClass("active")
-          $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
-          $(this).children(".body").slideDown();
-          $(this).addClass("active")
-          $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
-        })
-    })
-</script>
+    </script>
 
 </body>
 

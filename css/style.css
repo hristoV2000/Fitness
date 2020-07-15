@@ -550,3 +550,240 @@ header .ham-burger.active span:nth-child(2){
 }
 
 /* Class Schedule Section */
+
+.schedule{
+    padding: 80px 0px;
+}
+
+.schedule .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.schedule .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.schedule .content .text h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+}
+
+.schedule .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    padding: 0 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.schedule .content .text img{
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.schedule .content .timing .table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule .content .timing .table td{
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    color: #222222;
+}
+
+.schedule .content .timing .table tr:nth-child(even) td.day{
+    background-color: #222222;
+}
+
+.schedule .content .timing .table tr:nth-child(odd) td.day{
+    background-color: #444444;
+}
+
+.schedule .content .timing .table tr:nth-child(1) td.day{
+    background-color: #c11325;
+}
+
+.schedule .content .timing .table tr td.day{
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* Gallery Section */
+
+.gallery .content{
+    -webkit-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.gallery .content .box img{
+    display: block;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.gallery .content .box img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.gallery h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+/* Price Section */
+
+.price-package{
+    padding: 80p 0px;
+    background-color: #ffffff;
+}
+
+.price-package h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+.price-package .title-p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    padding: 0 20% 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.price-package .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.price-package .content .box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.price-package .content .box .inner{
+    background-color: #f0f0f0;
+}
+
+.price-package .content .box .inner .price-tag{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #c11325;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.price-package .content .box .inner .text{
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.price-package .content .box .inner .text h3{
+    font-size: 24px;
+    color: #222222;
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: 700;
+}
+
+.price-package .content .box .inner .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    padding: 0 0 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.price-package .content .box .inner .text .btn{
+    padding: 8px 30px;
+    background-color: #c11325;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: 15px;
+}
+
+.price-package .content .box .inner .text .btn:hover{
+    border-color: #222222;
+    color: #222222;
+    background-color: transparent;
+}
+
+.price-package .content .box .inner .img img{
+    width: 100%;
+}
+
+/* Contact Section */
+
+.contact{
+    padding: 80px 0px;
+    background-color: #222222;
+}
+
+.contact .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.contact .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+.contact .content .form input,
+.contact .content .form textarea{
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+    color: #ffffff;
+}
+
+.contact .content .form textarea{
+    height: 100px;
+}
+
+.contact .content .form button{
+
+}

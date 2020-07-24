@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Website Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .wow:first-child {
+          visibility: hidden;
+        }
+      </style>
 </head>
 
 <body>
@@ -36,10 +42,10 @@
     <!-- End Header-->
 
     <!-- Start Home-->
-    <section class="home" id="home">
+    <section class="home wow flash" id="home">
         <div class="container">
-            <h1>It's <span>gym</span> time. Let's go</h1>
-            <h1>We are ready to <span>fit you</span></h1>
+            <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
+            <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
         </div>
         <!-- go down -->
         <a href="#about" class="go-down">
@@ -54,7 +60,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="content">
-                <div class="box">
+                <div class="box wow bounceInUp">
                     <div class="inner">
                         <div class="img">
                             <img src="images/about1.jpg" alt="">
@@ -67,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box wow bounceInUp" data-wow-delay="0.2s">
                     <div class="inner">
                         <div class="img">
                             <img src="images/about1.jpg" alt="">
@@ -80,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box wow bounceInUp" data-wow-delay="0.4s">
                     <div class="inner">
                         <div class="img">
                             <img src="images/about1.jpg" alt="">
@@ -103,7 +109,7 @@
     <section class="service" id="services">
         <div class="container">
             <div class="content">
-                <div class="text box">
+                <div class="text box wow slideInLeft">
                     <h2>Services</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat nihil perferendis
                         iusto veniam harum recusandae, obcaecati saepe eius, officiis aliquam quis iste neque
@@ -113,7 +119,7 @@
                         consectetur architecto nulla reiciendis, ut laboriosam.</p>
                     <a href="" class="btn">Start Now</a>
                 </div>
-                <div class="accordian box">
+                <div class="accordian box wow slideInRight">
                     <div class="accordian-container active">
                         <div class="head">
                             <h4>Cardiovascular Equipment</h4>
@@ -169,15 +175,15 @@
     <section class="classes" id="classes">
         <div class="container">
             <div class="content">
-                <div class="box img">
+                <div class="box img wow slideInLeft">
                     <img src="images/gym.jpg" alt="">
                 </div>
-                <div class=" box text">
+                <div class=" box text wow slideInRight">
                     <h2>Our Classes</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit optio ut error numquam quo,
                         laborum quibusdam sit rem. Vero iure hic molestias totam! Illo eum officia ipsam at sit.</p>
                     <div class="class-items">
-                        <div class="item">
+                        <div class="item wow bounceInUp">
                             <div class="item-img">
                                 <img src="images/about1.jpg" alt="">
                                 <div class="price">
@@ -192,7 +198,7 @@
                                 <a href="">Get Details</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item wow bounceInUp">
                             <div class="item-text">
                                 <h4>Stretching Training</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eius debitis illum
@@ -218,14 +224,14 @@
     <section class="start-today">
         <div class="container">
             <div class="content">
-                <div class="box text">
+                <div class="box text wow slideInLeft">
                     <h2>Start Your Training Today</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt enim, nemo culpa quidem, id
                         laborum, mollitia recusandae dicta corporis modi labore obcaecati quae facilis voluptates
                         assumenda eum unde? Inventore, unde.</p>
                     <a href="" class="btn">Start Now</a>
                 </div>
-                <div class="box img">
+                <div class="box img wow slideInRight">
                     <img src="images/about1.jpg" alt="">
                 </div>
             </div>
@@ -238,14 +244,14 @@
     <section class="schedule" id="schedule">
         <div class="container">
             <div class="content">
-                <div class="box text">
+                <div class="box text wow slideInLeft">
                     <h2>Classes Schedule</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus fugit impedit magni
                         reprehenderit itaque delectus, officiis, similique sit voluptas maxime doloribus minima
                         voluptatem mollitia ipsam commodi voluptates distinctio. Recusandae.</p>
                     <img src="images/about1.jpg" alt="">
                 </div>
-                <div class="box timing">
+                <div class="box timing wow slideInLeft">
                     <table class="table">
                         <tbody>
                             <tr>
@@ -298,16 +304,16 @@
     <section class="gallery">
         <h2>Workout Gallery</h2>
         <div class="content">
-            <div class="box">
+            <div class="box wow slideInLeft">
                 <img src="images/gym.jpg" alt="">
             </div>
-            <div class="box">
+            <div class="box wow slideInRight">
                 <img src="images/gym.jpg" alt="">
             </div>
-            <div class="box">
+            <div class="box wow slideInLeft">
                 <img src="images/gym.jpg" alt="">
             </div>
-            <div class="box">
+            <div class="box wow slideInRight">
                 <img src="images/gym.jpg" alt="">
             </div>
         </div>
@@ -324,7 +330,7 @@
                 aliquid est amet pariatur quae minima sequi recusandae, doloremque ipsam asperiores! Voluptatem ipsam
                 sint odit suscipit.</p>
             <div class="content">
-                <div class="box">
+                <div class="box wow bounceInUp">
                     <div class="inner">
                         <div class="price-tag">
                             $59/Month
@@ -343,7 +349,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box wow bounceInUp" data-wow-delay="0.2s">
                     <div class="inner">
                         <div class="price-tag">
                             $69/Month
@@ -362,7 +368,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box wow bounceInUp" data-wow-delay="0.4s">
                     <div class="inner">
                         <div class="price-tag">
                             $99/Month
@@ -391,7 +397,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="content">
-                <div class="box form">
+                <div class="box form wow slideInLeft">
                     <form>
                         <input type="text" placeholder="Enter Name">
                         <input type="text" placeholder="Enter Email">
@@ -400,7 +406,7 @@
                         <button type="submit">Sent Message</button>
                     </form>
                 </div>
-                <div class="box text">
+                <div class="box text wow slideInRight">
                     <h2>Get Connected with Gym</h2>
                     <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo quas unde laudantium fuga
                         maiores cum, assumenda id accusantium nam quam. Hic, molestias ut facilis eligendi qui autem
@@ -467,6 +473,17 @@
             })
         })
     </script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+  </script>
 
 </body>
 
